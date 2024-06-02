@@ -1,0 +1,45 @@
+:root {
+  --radius-square: 0;
+  --radius-M: 0.25rem; //4
+  --radius-L: 0.5rem; //8px
+  --radius-xl: 1rem; //16px
+  --radius-round: 9999;
+
+  // Line-height component
+  --size-lh-small: 1rem;
+  --size-lh-medium: 1.25rem;
+  --size-lh-large: 1.5rem;
+  --size-lh-larger: 1.75rem;
+
+  --size-icon-small: 0.875rem;
+  --size-icon-medium: 1rem;
+  --size-icon-large: 1.25rem;
+  --size-icon-larger: 1.5rem;
+
+  --size-gap-small: var(--space-2XS);
+  --size-gap-medium: var(--space-2XS);
+  --size-gap-large: var(--space-XS);
+  --size-gap-larger: var(--space-S);
+
+  --size-padding-h-small: var(--space-S);
+  --size-padding-h-medium: var(--space-M);
+  --size-padding-h-large: var(--space-L);
+  --size-padding-h-larger: var(--space-XL);
+
+  --size-padding-v-small: var(--space-2XS);
+  --size-padding-v-medium: var(--space-XS);
+  --size-padding-v-large: var(--space-S);
+  --size-padding-v-larger: var(--space-M);
+
+  --padding-sides-xs: 1.5rem; // 24px
+  --padding-sides-s: 2rem; // 32px
+  --padding-sides-m: 2.5rem; // 40px
+  --padding-sides-l: 3.125rem; // 50px
+  --padding-sides-xl: 3.75rem; // 60px
+
+  --margin-sides-xs: var(--padding-sides-xs);
+  --margin-sides-s: var(--padding-sides-s);
+  --margin-sides-m: var(--padding-sides-m);
+  --margin-sides-l: var(--padding-sides-l);
+  --margin-sides-xl: var(--padding-sides-xl);
+}
