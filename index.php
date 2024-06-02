@@ -23,3 +23,14 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg"/>
     <link rel="alternate icon" href="/favicon.ico"/>
 </head>
+
+<body>
+<?php include 'src/php/header.php' ?>
+
+<main>
+
+</main>
+
+<script src="dist/js/main.js"></script>
+</body>
+</html>
