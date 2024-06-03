@@ -19,7 +19,7 @@
   --clr-light-medium: var(--clr-zinc-300);
   --clr-light-high: var(--clr-zinc-500);
   --clr-light-higher: var(--clr-zinc-600);
-  --clr-light-hightest: var(--clr-zinc-700);
+  --clr-light-highest: var(--clr-zinc-700);
 
   // Dark mode colors
   --clr-dark-lowest: var(--clr-zinc-900);
@@ -28,7 +28,7 @@
   --clr-dark-medium: var(--clr-zinc-500);
   --clr-dark-high: var(--clr-zinc-400);
   --clr-dark-higher: var(--clr-zinc-300);
-  --clr-dark-hightest: var(--clr-zinc-200);
+  --clr-dark-highest: var(--clr-zinc-200);
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,8 +38,8 @@
     --clr-low: var(--clr-light-low);
     --clr-medium: var(--clr-light-medium);
     --clr-high: var(--clr-light-high);
-    --clr-highter: var(--clr-light-higher);
-    --clr-hightest: var(--clr-light-hightest);
+    --clr-higher: var(--clr-light-higher);
+    --clr-highest: var(--clr-light-highest);
   }
 }
 
@@ -50,7 +50,7 @@
     --clr-low: var(--clr-dark-low);
     --clr-medium: var(--clr-dark-medium);
     --clr-high: var(--clr-dark-high);
-    --clr-highter: var(--clr-dark-higher);
-    --clr-hightest: var(--clr-dark-hightest);
+    --clr-higher: var(--clr-dark-higher);
+    --clr-highest: var(--clr-dark-highest);
   }
 }
