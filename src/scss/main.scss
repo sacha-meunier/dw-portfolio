@@ -1,15 +1,18 @@
 @import "reset";
 
 // load config & vars
-@import "config/breakpoints";
-@import "config/colors";
 @import "config/elements";
+@import "config/animations";
 @import "config/fonts";
+@import "config/colors";
 @import "config/spacings";
+@import "config/breakpoints";
 
 // load mixins & vars
 @import "helpers";
 
 // load components
+@import "components/base";
 @import "components/header";
+@import "components/toggler";
 
