@@ -1,8 +1,6 @@
 @import "../helpers";
 
 .header {
-  container-type: inline-size;
-  container-name: header;
 
   &__wrapper {
     @include margin-sides;
@@ -40,13 +38,13 @@
   }
 }
 
-@container header (min-width: 480px) {
+@media (min-width: 480px) {
   .nav-toggler__label {
     right: var(--margin-sides-s);
   }
 }
 
-@container header (min-width: 760px) {
+@media (min-width: 760px) {
   .header {
 
     &__nav {
