@@ -1,7 +1,7 @@
 <header class="header" role="banner">
     <div class="header__wrapper">
         <h1>
-            <a class="header__logo" href="#" aria-label="Zekiah homepage">
+            <a class="header__logo" href="#" aria-label="Zekiah - homepage">
                 <svg class="header__logo-item" width="18" height="22" viewBox="0 0 18 22" fill="red"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.8574 0L0 4.06981L4.31441 5.91274L10.0291 4.33857L5.44978 12.5934L10.3319 22L17.3333 4.33857L13.2082 7.33333L10.0291 13.3229L9.23435 11.6719L15.8574 0Z"/>
@@ -23,6 +23,7 @@
 
         <div class="header__buttons">
             <a class="header__contact" href="#">Contact</a>
+
             <div class="nav-toggler">
                 <input class="nav-toggler__input" id="toggler" type="checkbox" aria-controls="primary-nav" aria-expanded="false"/>
 
