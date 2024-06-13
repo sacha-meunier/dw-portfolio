@@ -41,7 +41,7 @@
     left: 0;
 
     background: var(--clr-lower);
-    transition: var(--ad-500);
+    transition: transform var(--ad-500);
     transform: translateX(100%);
   }
 
