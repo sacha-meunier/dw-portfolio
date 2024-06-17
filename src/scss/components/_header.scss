@@ -1,11 +1,12 @@
 @import "../helpers";
 
 .header {
+  background-color: var(--clr-lowest);
 
   &__wrapper {
     @include margin-sides;
-    margin-top: var(--space-l);
-    margin-bottom: var(--space-l);
+    padding-top: var(--space-l);
+    padding-bottom: var(--space-l);
     display: flex;
     justify-content: space-between;
     align-items: center;
