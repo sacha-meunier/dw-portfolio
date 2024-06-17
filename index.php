@@ -25,12 +25,15 @@
 </head>
 
 <body>
-<?php include 'src/php/header.php' ?>
+<input id="scheme-color" type="checkbox" aria-label="hidden">
 
+<?php include 'src/php/header.php' ?>
 <main>
 
-</main>
 
+
+</main>
+<?php include 'src/php/footer.php' ?>
 <script src="dist/js/main.js"></script>
 </body>
 </html>

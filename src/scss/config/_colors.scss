@@ -1,5 +1,4 @@
 :root {
-  // Base palette
   --clr-zinc-50: hsl(0, 0%, 98%);
   --clr-zinc-100: hsl(240, 5%, 96%);
   --clr-zinc-200: hsl(240, 5%, 90%);
@@ -11,46 +10,56 @@
   --clr-zinc-800: hsl(240, 5%, 16%);
   --clr-zinc-900: hsl(240, 5%, 10%);
   --clr-zinc-1000: hsl(240, 5%, 4%);
-
-  // Light mode colors
-  --clr-light-lowest: var(--clr-zinc-50);
-  --clr-light-lower: var(--clr-zinc-100);
-  --clr-light-low: var(--clr-zinc-200);
-  --clr-light-medium: var(--clr-zinc-300);
-  --clr-light-high: var(--clr-zinc-500);
-  --clr-light-higher: var(--clr-zinc-600);
-  --clr-light-highest: var(--clr-zinc-700);
-
-  // Dark mode colors
-  --clr-dark-lowest: var(--clr-zinc-900);
-  --clr-dark-lower: var(--clr-zinc-800);
-  --clr-dark-low: var(--clr-zinc-700);
-  --clr-dark-medium: var(--clr-zinc-500);
-  --clr-dark-high: var(--clr-zinc-400);
-  --clr-dark-higher: var(--clr-zinc-300);
-  --clr-dark-highest: var(--clr-zinc-200);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --clr-lowest: var(--clr-light-lowest);
-    --clr-lower: var(--clr-light-lower);
-    --clr-low: var(--clr-light-low);
-    --clr-medium: var(--clr-light-medium);
-    --clr-high: var(--clr-light-high);
-    --clr-higher: var(--clr-light-higher);
-    --clr-highest: var(--clr-light-highest);
+    --clr-lowest: var(--clr-zinc-50);
+    --clr-lower: var(--clr-zinc-100);
+    --clr-low: var(--clr-zinc-200);
+    --clr-medium: var(--clr-zinc-300);
+    --clr-high: var(--clr-zinc-500);
+    --clr-higher: var(--clr-zinc-600);
+    --clr-highest: var(--clr-zinc-700);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-lowest: var(--clr-dark-lowest);
-    --clr-lower: var(--clr-dark-lower);
-    --clr-low: var(--clr-dark-low);
-    --clr-medium: var(--clr-dark-medium);
-    --clr-high: var(--clr-dark-high);
-    --clr-higher: var(--clr-dark-higher);
-    --clr-highest: var(--clr-dark-highest);
+    --clr-lowest: var(--clr-zinc-900);
+    --clr-lower: var(--clr-zinc-800);
+    --clr-low: var(--clr-zinc-700);
+    --clr-medium: var(--clr-zinc-500);
+    --clr-high: var(--clr-zinc-400);
+    --clr-higher: var(--clr-zinc-200);
+    --clr-highest: var(--clr-zinc-200);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #scheme-color:checked ~ header,
+  #scheme-color:checked ~ main,
+  #scheme-color:checked ~ footer {
+    --clr-lowest: var(--clr-zinc-900);
+    --clr-lower: var(--clr-zinc-800);
+    --clr-low: var(--clr-zinc-700);
+    --clr-medium: var(--clr-zinc-500);
+    --clr-high: var(--clr-zinc-400);
+    --clr-higher: var(--clr-zinc-200);
+    --clr-highest: var(--clr-zinc-200);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #scheme-color:checked ~ .header,
+  #scheme-color:checked ~ main,
+  #scheme-color:checked ~ .footer {
+    --clr-lowest: var(--clr-zinc-50);
+    --clr-lower: var(--clr-zinc-100);
+    --clr-low: var(--clr-zinc-200);
+    --clr-medium: var(--clr-zinc-300);
+    --clr-high: var(--clr-zinc-500);
+    --clr-higher: var(--clr-zinc-600);
+    --clr-highest: var(--clr-zinc-700);
   }
 }
