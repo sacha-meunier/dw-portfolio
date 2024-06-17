@@ -3,7 +3,7 @@
   --radius-m: 0.25rem; //4
   --radius-l: 0.5rem; //8px
   --radius-xl: 1rem; //16px
-  --radius-round: 9999;
+  --radius-round: 9999px;
 
   // Line-height component
   --size-lh-small: 1rem;
@@ -31,6 +31,8 @@
   --size-padding-v-large: var(--space-s);
   --size-padding-v-larger: var(--space-m);
 
+  --padding-sides-6: 6px;
+  --padding-sides-12: 12px;
   --padding-sides-xs: 24px;//1.5rem; // 24px
   --padding-sides-s: 32px;//2rem; // 32px
   --padding-sides-m: 40px;//2.5rem; // 40px
