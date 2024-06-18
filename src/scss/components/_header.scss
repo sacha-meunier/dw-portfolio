@@ -53,7 +53,7 @@
 
       &-list {
         display: flex;
-        gap: var(--space-2xl);
+        gap: clamp(var(--space-m), 3vw, var(--space-2xl));
       }
 
       &-link {
