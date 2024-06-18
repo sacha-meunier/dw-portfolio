@@ -51,14 +51,14 @@
     &__title {
       color: var(--clr-highest);
 
-      font-size: clamp(var(--fs-14), 4vw, var(--fs-30));
+      font-size: clamp(var(--fs-14), 3vw, var(--fs-30));
       font-weight: var(--fw-bold);
     }
 
     &__copy {
       color: var(--clr-high);
 
-      font-size: clamp(var(--fs-14), 4vw, var(--fs-18));
+      font-size: clamp(var(--fs-14), 3vw, var(--fs-18));
       font-weight: var(--fw-regular);
       line-height: clamp(1.25rem, 5vw, 1.75rem);
     }
