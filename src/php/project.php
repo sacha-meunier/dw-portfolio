@@ -10,7 +10,7 @@
                 <div class="project__card__copy">Création d’un site web pour une asbl dans le cadre du cours de Design Web.</div>
             </div>
         </div>
-        <div class="project__card">
+        <div class="project__card project__card--reversed">
             <div class="project__card__figure">
                 <img class="project__card__image" src="" alt="">
             </div>
@@ -28,7 +28,7 @@
                 <div class="project__card__copy">Création d’un Portfolio utilisant Wordpress dans le cadre du cours de Design Web.</div>
             </div>
         </div>
-        <div class="project__card">
+        <div class="project__card project__card--reversed">
             <div class="project__card__figure">
                 <img class="project__card__image" src="" alt="">
             </div>

@@ -3,7 +3,7 @@
 .project {
   @include margin-sides;
   padding-top: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
+  padding-bottom: 12rem;
 
   &__heading {
     margin-bottom: clamp(1.5rem, 10vw, 3rem);
@@ -68,12 +68,18 @@
 @media (min-width: 768px) {
   .project {
     &__card {
-    flex-direction: row;
+      flex-direction: row;
+
+      &--reversed {
+        flex-direction: row-reverse;
+      }
+
       &__figure {
         width: 30rem;
         max-width: 50%;
         height: 16rem;
       }
+
       &__body {
         width: 50%;
       }
