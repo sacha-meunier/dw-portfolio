@@ -106,7 +106,7 @@
             <div class="project-item__card__figure">
                 <img class="project-item__card__image" src="" alt="">
             </div>
-            <a class="project-item__card__link" href="https://sachameunier-cv.com">
+            <a class=" button button--in-card project-item__card__link" href="https://github.com/sacha-meunier/dw-portfolio.com">
                 Voir en direct
                 <svg class="project-item__live-img" width="12" height="11" viewBox="0 0 9 8" fill="none" stroke="#52525B"
                      xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +125,7 @@
             <div class="project-item__card__figure">
                 <img class="project-item__card__image" src="" alt="">
             </div>
-            <a class="project-item__card__link" href="https://github.com/sacha-meunier/dw-portfolio.com">
+            <a class=" button button--in-card project-item__card__link" href="https://github.com/sacha-meunier/dw-portfolio.com">
                 Vers Github
                 <svg class="project-item__live-img" width="12" height="11" viewBox="0 0 9 8" fill="none" stroke="#52525B"
                      xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +136,7 @@
         </div>
 
         <div class="project-item__card__buttons">
-            <a class="project-item__card__link" href="#">
+            <a class="button" href="#">
                 Contactez-moi
             </a>
 

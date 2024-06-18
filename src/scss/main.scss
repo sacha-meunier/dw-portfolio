@@ -12,12 +12,14 @@
 @import "helpers";
 
 // load pages
-/*@import "pages/project";*/
-/*@import "pages/project-item";*/
+@import "pages/project";
+@import "pages/project-item";
 @import "pages/contact";
+@import "pages/landing";
 
 // load components
 @import "components/base";
+@import "components/button";
 @import "components/scheme";
 @import "components/header";
 @import "components/footer";

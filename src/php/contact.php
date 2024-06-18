@@ -15,7 +15,8 @@
                 <textarea class="contact-form__input contact-form__textarea" id="details" name="details" placeholder="Un bref résumé, la deadline, les objectifs, etc."
                           required></textarea>
             </div>
-            <button class="contact-form__button project-item__card__link" type="submit">
+            <!--<button class="contact-form__button project-item__card__link" type="submit">-->
+                <button class="button" type="submit">
                 Contactez-moi
             </button>
         </form>
