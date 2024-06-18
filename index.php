@@ -29,7 +29,7 @@
 
 <?php include 'src/php/header.php' ?>
 <main>
-    
+<?php include 'src/php/project.php' ?>
 </main>
 <?php include 'src/php/footer.php' ?>
 <script src="dist/js/main.js"></script>

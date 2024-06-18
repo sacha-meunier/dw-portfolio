@@ -1,0 +1,82 @@
+@import "../helpers";
+
+.project {
+  @include margin-sides;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+
+  &__heading {
+    margin-bottom: clamp(1.5rem, 10vw, 3rem);
+    color: var(--clr-highest);
+    text-align: center;
+
+    font-size: clamp(var(--fs-30), 10vw, var(--fs-48));
+    font-weight: var(--fw-bold);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(var(--space-l), 10vw, var(--space-2xl));
+  }
+
+  &__card {
+    display: flex;
+    padding: clamp(1.5rem, 10vw, 3rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-self: stretch;
+
+    border-radius: 1.5rem;
+    border: 1px solid var(--clr-low);
+    background: var(--clr-lower);
+
+    &__figure {
+      background: var(--clr-low);
+      border-radius: 0.625rem;
+      height: 10rem;
+      width: 100%;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.625rem;
+    }
+
+    &__title {
+      color: var(--clr-highest);
+
+      font-size: clamp(var(--fs-14), 4vw, var(--fs-30));
+      font-weight: var(--fw-bold);
+    }
+
+    &__copy {
+      color: var(--clr-high);
+
+      font-size: clamp(var(--fs-14), 4vw, var(--fs-18));
+      font-weight: var(--fw-regular);
+      line-height: clamp(1.25rem, 5vw, 1.75rem);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    &__card {
+    flex-direction: row;
+      &__figure {
+        width: 30rem;
+        max-width: 50%;
+        height: 16rem;
+      }
+      &__body {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -11,6 +11,9 @@
 // load mixins & vars
 @import "helpers";
 
+// load pages
+@import "pages/project";
+
 // load components
 @import "components/base";
 @import "components/scheme";
