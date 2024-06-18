@@ -8,6 +8,10 @@
     @include margin-sides;
   }
 
+  &__about {
+    margin-bottom: 2.5rem;
+  }
+
   &__links {
     display: flex;
     justify-content: space-between;
