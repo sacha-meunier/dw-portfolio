@@ -14,9 +14,9 @@
             <h2 class="sro">Navigation</h2>
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a class="header__nav-link" href="<?= esc_url(home_url('/')); ?>">Accueil</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="#">Services</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="#">Projets</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="#">Formations</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="<?= esc_url(home_url('/')); ?>#services">Services</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="<?= esc_url(home_url('/')); ?>#project">Projets</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="<?= esc_url(home_url('/')); ?>#training">Formations</a></li>
             </ul>
         </nav>
 

@@ -36,7 +36,7 @@
         <div class="hero__copy">Je suis développeur web Front-End
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <h2 class="section__heading">Services</h2>
         <p class="section__copy">Les choses que je peux faire pour vous !</p>
 
@@ -88,8 +88,7 @@
             </div>
         </div>
     </section>
-
-    <section class="project">
+    <section class="project" id="project">
         <h2 class="section__heading">Projets récents</h2>
         <p class="section__copy">Projets scolaires, personnels et professionnels</p>
         <div class="project__wrapper">
@@ -131,8 +130,7 @@
             </a>
         </div>
     </section>
-
-    <section class="services training">
+    <section class="services training" id="training">
         <h2 class="section__heading">Ma formation</h2>
         <p class="section__copy">Découvrez où j'ai acquis mes compétences</p>
 

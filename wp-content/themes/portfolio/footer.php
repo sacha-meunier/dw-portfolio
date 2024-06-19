@@ -120,9 +120,9 @@
                     <h2 class="sro">Navigation</h2>
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>">Accueil</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Services</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Projets</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Formations</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>#services">Services</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>#project">Projets</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>#training">Formations</a></li>
                     </ul>
                 </nav>
             </div>
