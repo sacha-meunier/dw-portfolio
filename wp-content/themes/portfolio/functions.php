@@ -36,3 +36,12 @@ function get_contact_page_url() {
         return '#';
     }
 }
+
+function get_projects_page_url() {
+    $projects_page = get_page_by_path('projects');
+    if ($projects_page) {
+        return get_permalink($projects_page->ID);
+    } else {
+        return '#';
+    }
+}
