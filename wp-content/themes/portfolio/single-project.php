@@ -67,17 +67,35 @@
                         <div class="project-item__card__group-content">
                             <div class="project-item__card__group-label">Services</div>
                             <div class="project-item__card__group-value">
-                                <?php
-                                if (have_rows('project_services')):
-                                    while (have_rows('project_services')): the_row();
-                                        ?>
-                                        <div class="project-item__card__group-item"><?php the_sub_field('service'); ?></div>
-                                    <?php
-                                    endwhile;
-                                endif;
-                                ?>
+                                <div class="project-item__card__group-item"><?php the_field('project_services'); ?></div>
                             </div>
                         </div>
+                        <div class="project-item__card__group-content">
+                            <div class="project-item__card__group-label">Technologie</div>
+                            <div class="project-item__card__group-value">
+                                <div class="project-item__card__group-item"><?php the_field('project_technology'); ?></div>
+                            </div>
+                        </div>
+                        <div class="project-item__card__group-content">
+                            <div class="project-item__card__group-label">Outils</div>
+                            <div class="project-item__card__group-value">
+                                <div class="project-item__card__group-item"><?php the_field('project_tool'); ?></div>
+                            </div>
+                        </div>
+                        <!--<div class="project-item__card__group-content">
+                            <div class="project-item__card__group-label">Services</div>
+                            <div class="project-item__card__group-value">
+                                <?php
+/*                                if (have_rows('project_services')):
+                                    while (have_rows('project_services')): the_row();
+                                        */?>
+                                        <div class="project-item__card__group-item"><?php /*the_sub_field('service'); */?></div>
+                                    <?php
+/*                                    endwhile;
+                                endif;
+                                */?>
+                            </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -90,7 +108,7 @@
                 <div class="project-item__card__figure">
                     <img class="project-item__card__image" src="<?php the_field('live_version_image'); ?>" alt="">
                 </div>
-                <a class="project-item__card__link" href="<?php the_field('live_version_url'); ?>">
+                <a class="button button--in-card project-item__card__link" href="<?php the_field('live_version_url'); ?>">
                     Voir en direct
                     <svg class="project-item__live-img" width="12" height="11" viewBox="0 0 9 8" fill="none" stroke="#52525B"
                          xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +126,7 @@
                 <div class="project-item__card__figure">
                     <img class="project-item__card__image" src="<?php the_field('github_image'); ?>" alt="">
                 </div>
-                <a class="project-item__card__link" href="<?php the_field('github_url'); ?>">
+                <a class="button button--in-card project-item__card__link" href="<?php the_field('github_url'); ?>">
                     Vers Github
                     <svg class="project-item__live-img" width="12" height="11" viewBox="0 0 9 8" fill="none" stroke="#52525B"
                          xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +137,7 @@
             </div>
 
             <div class="project-item__card__buttons">
-                <a class="project-item__card__link" href="<?= esc_url(get_contact_page_url()); ?>">
+                <a class="button project-item__card__link" href="<?= esc_url(get_contact_page_url()); ?>">
                     Contactez-moi
                 </a>
 
