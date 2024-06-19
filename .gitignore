@@ -7,3 +7,4 @@ wp-content/*
 wp-content/themes/*
 !wp-content/themes/portfolio/
 !wp-content/themes/portfolio/*
+/wp-content/themes/portfolio/public/content/
