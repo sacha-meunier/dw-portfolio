@@ -1,0 +1,26 @@
+.button {
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-low);
+
+  background: var(--clr-lower);
+  color: var(--clr-high);
+
+  font-size: clamp(var(--fs-14), 4vw, var(--fs-18));
+  font-weight: var(--fw-medium);
+
+  &--in-card {
+    border: 1px solid var(--clr-medium);
+    background: var(--clr-low);
+    color: var(--clr-high);
+  }
+}
