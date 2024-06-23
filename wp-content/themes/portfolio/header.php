@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Portfolio - Sacha Meunier</title>
+    <?php /*wp_head(); */?>
     <link rel="stylesheet" href="../../../dist/css/main.css">
     <meta name="author" content="Sacha Meunier">
     <meta name="description"
