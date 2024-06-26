@@ -2,7 +2,9 @@
     <section class="hero">
         <h1 class="hero__title">Je m'appelle Sacha</h1>
         <div class="hero__location">
-            <svg width="18" height="18" fill="#0F0928" xmlns="http://www.w3.org/2000/svg"><path d="m9 17.796-4.773-4.773a6.75 6.75 0 1 1 9.546 0L9 17.796zm3.713-5.834a5.25 5.25 0 1 0-7.425 0L9 15.675l3.713-3.713zM9 9.75a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            <svg width="18" height="18" fill="#0F0928" xmlns="http://www.w3.org/2000/svg">
+                <path d="m9 17.796-4.773-4.773a6.75 6.75 0 1 1 9.546 0L9 17.796zm3.713-5.834a5.25 5.25 0 1 0-7.425 0L9 15.675l3.713-3.713zM9 9.75a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>
             <span>Faimes, Belgique</span>
         </div>
         <div class="hero__copy">Je suis développeur web Front-End
@@ -38,7 +40,8 @@
                 </div>
                 <div class="services__card__body">
                     <div class="services__card__title">UI / UX Design</div>
-                    <div class="services__card__copy">Je conçois des interfaces centrées sur l’utilisateur et qui valorisent
+                    <div class="services__card__copy">Je conçois des interfaces centrées sur l’utilisateur et qui
+                        valorisent
                         votre marque.
                     </div>
                 </div>
@@ -53,7 +56,8 @@
                 </div>
                 <div class="services__card__body">
                     <div class="services__card__title">SEO</div>
-                    <div class="services__card__copy">En plus de créer une expérience memorable, j’optimise votre visibilité
+                    <div class="services__card__copy">En plus de créer une expérience memorable, j’optimise votre
+                        visibilité
                         sur internet.
                     </div>
                 </div>
@@ -70,7 +74,8 @@
                 </div>
                 <div class="project__card__body">
                     <div class="project__card__title">Le Sef de Huy</div>
-                    <div class="project__card__copy">Création d’un site web pour une asbl dans le cadre du cours de Design
+                    <div class="project__card__copy">Création d’un site web pour une asbl dans le cadre du cours de
+                        Design
                         Web.
                     </div>
                 </div>
@@ -92,7 +97,8 @@
                 </div>
                 <div class="project__card__body">
                     <div class="project__card__title">Le Portfolio</div>
-                    <div class="project__card__copy">Création d’un Portfolio utilisant Wordpress dans le cadre du cours de
+                    <div class="project__card__copy">Création d’un Portfolio utilisant Wordpress dans le cadre du cours
+                        de
                         Design Web.
                     </div>
                 </div>
@@ -126,8 +132,10 @@
                 </div>
                 <div class="services__card__body">
                     <div class="services__card__title">Auto-perfectionnement</div>
-                    <div class="services__card__copy">Je suis passionné par le développement personnel dans les domaines du
-                        graphisme, du montage vidéo et du web. En autodidacte, j'explore diverses techniques et outils pour
+                    <div class="services__card__copy">Je suis passionné par le développement personnel dans les domaines
+                        du
+                        graphisme, du montage vidéo et du web. En autodidacte, j'explore diverses techniques et outils
+                        pour
                         affiner mes compétences. Mon parcours m'a conduit à maîtriser les aspects créatifs et techniques
                         essentiels de ces disciplines, utilisant tout les outils à ma portée.
                     </div>
@@ -139,7 +147,8 @@
                 </div>
                 <div class="services__card__body">
                     <div class="services__card__title">Collège Saint-Louis Waremme</div>
-                    <div class="services__card__copy">J'ai obtenu mon CESS en technique de transition informatique, où j'ai
+                    <div class="services__card__copy">J'ai obtenu mon CESS en technique de transition informatique, où
+                        j'ai
                         acquis les fondamentaux du web, du graphisme et de l'informatique. Je continue d'explorer et de
                         perfectionner mes connaissances de manière
                         autodidacte, en utilisant ces bases solides comme tremplin pour mes projets personnels et
