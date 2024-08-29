@@ -25,14 +25,14 @@ get_header();
                                 <img class="project__card__image" src="<?= esc_url($project_image); ?>"
                                      alt="<?php the_title(); ?>">
                             <?php else: ?>
-                                <img class="project__card__image"
-                                     src="<?= esc_url(get_template_directory_uri()); ?>/path/to/default-image.jpg"
-                                     alt="<?php the_title(); ?>">
+                                <!--<img class="project__card__image"
+                                     src="<?php /*= esc_url(get_template_directory_uri()); */?>/path/to/default-image.jpg"
+                                     alt="<?php /*the_title(); */?>">-->
                             <?php endif; ?>
                         </div>
                         <div class="project__card__body">
                             <div class="project__card__title"><?php the_title(); ?></div>
-                            <div class="project__card__copy"><?php the_excerpt(); ?></div>
+                            <div class="project__card__copy"><?php the_field('project_description'); ?></div>
                         </div>
                     </a>
                 <?php
