@@ -221,5 +221,6 @@
 </footer>
 </main>
 <script src="../../../dist/js/main.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
