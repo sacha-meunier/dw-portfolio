@@ -33,8 +33,8 @@
 
             <div class="project-item__card">
                 <div class="project-item__card__body">
-                    <div class="project-item__card__title">Description du projet</div>
-                    <div class="project-item__card__copy"><?php the_field('project_description'); ?></div>
+                    <div class="project-item__card__title"><?php the_field('project_description_title'); ?></div>
+                    <div class="project-item__card__copy"><?php the_field('project_description_copy'); ?></div>
                 </div>
 
                 <div class="project-item__card__body">
