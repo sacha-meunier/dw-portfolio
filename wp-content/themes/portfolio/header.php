@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Portfolio - Sacha Meunier</title>
-    <?php /*wp_head(); */?>
     <link rel="stylesheet" href="../../../dist/css/main.css">
+
     <meta name="author" content="Sacha Meunier">
     <meta name="description"
           content="Bienvenue sur mon Portfolio en tant que web developer. Découvrez mes projets, ma formation et mes compétences.">
@@ -22,6 +21,8 @@
 
     <link rel="icon" type="image/svg+xml" href="../../../favicon.svg"/>
     <link rel="alternate icon" href="/favicon.ico"/>
+
+    <?php wp_head(); ?>
 </head>
 
 <body>
