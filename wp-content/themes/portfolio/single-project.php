@@ -1,8 +1,48 @@
 <?php get_header(); ?>
 
+<?php
+if (function_exists('get_field')) {
+    if (is_singular('project')) {
+        $project_ariane = get_field('project_ariane');
+        $project_subtitle = get_field('project_subtitle');
+        $project_url = get_field('project_url');
+        $project_img = get_field('project_img');
+        $project_card1_title1 = get_field('project_card1_title1');
+        $project_card1_copy1 = get_field('project_card1_copy1');
+        $project_card1_title2 = get_field('project_card1_title2');
+        $project_card1_copy2 = get_field('project_card1_copy2');
+        $project_card1_title3 = get_field('project_card1_title3');
+        $project_card1_copy3 = get_field('project_card1_copy3');
+
+        $project_card2_title = get_field('project_card2_title');
+        $project_card2_label1 = get_field('project_card2_label1');
+        $project_card2_value1 = get_field('project_card2_value1');
+        $project_card2_label2 = get_field('project_card2_label2');
+        $project_card2_value2 = get_field('project_card2_value2');
+        $project_card2_label3 = get_field('project_card2_label3');
+        $project_card2_value3 = get_field('project_card2_value3');
+        $project_card2_label4 = get_field('project_card2_label4');
+        $project_card2_value4 = get_field('project_card2_value4');
+        $project_card2_label5 = get_field('project_card2_label5');
+        $project_card2_value5 = get_field('project_card2_value5');
+
+        $project_card3_title = get_field('project_card3_title');
+        $project_card3_copy = get_field('project_card3_copy');
+        $project_card3_img = get_field('project_card3_img');
+        $project_card3_cta = get_field('project_card3_cta');
+
+        $project_card4_title = get_field('project_card4_title');
+        $project_card4_copy = get_field('project_card4_copy');
+        $project_card4_cta = get_field('project_card4_cta');
+        $project_card4_cta_url = get_field('project_card4_cta_url');
+        $project_cta = get_field('project_cta');
+    }
+}
+?>
+
 <main class="main-content">
     <section class="project-item">
-        <h2 class="project-item__heading"><?php the_title(); ?></h2>
+        <h2 class="project-item__heading"><?= the_title(); ?></h2>
 
         <div class="project-item__breadcrumb">
             <svg class="project-item__breadcrumb-img" width="12" height="12" viewBox="0 0 12 12" fill="none"

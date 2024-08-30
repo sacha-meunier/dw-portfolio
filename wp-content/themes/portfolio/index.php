@@ -6,19 +6,38 @@ if (function_exists('get_field')) {
         $home_hero_location_icon = get_field('home_hero_location_icon');
         $home_hero_copy = get_field('home_hero_copy');
 
-        $home_s1_title = get_field('home_s1_title');
-        $home_s1_copy = get_field('home_s1_copy');
-        $home_s1_card1_icon = get_field('home_s1_card1_icon');
-        $home_s1_card1_title = get_field('home_s1_card1_title');
-        $home_s1_card1_copy = get_field('home_s1_card1_copy');
+        $home_services_title = get_field('home_services_title');
+        $home_services_copy = get_field('home_services_copy');
+        $home_services_card1_icon = get_field('home_services_card1_icon');
+        $home_services_card1_title = get_field('home_services_card1_title');
+        $home_services_card1_copy = get_field('home_services_card1_copy');
 
-        $home_s1_card2_icon = get_field('home_s1_card2_icon');
-        $home_s1_card2_title = get_field('home_s1_card2_title');
-        $home_s1_card2_copy = get_field('home_s1_card2_copy');
+        $home_services_card2_icon = get_field('home_services_card2_icon');
+        $home_services_card2_title = get_field('home_services_card2_title');
+        $home_services_card2_copy = get_field('home_services_card2_copy');
 
-        $home_s1_card3_icon = get_field('home_s1_card3_icon');
-        $home_s1_card3_title = get_field('home_s1_card3_title');
-        $home_s1_card3_copy = get_field('home_s1_card3_copy');
+        $home_services_card3_icon = get_field('home_services_card3_icon');
+        $home_services_card3_title = get_field('home_services_card3_title');
+        $home_services_card3_copy = get_field('home_services_card3_copy');
+
+        $home_projects_title = get_field('home_projects_title');
+        $home_projects_copy = get_field('home_projects_copy');
+        $home_projects_cta = get_field('home_projects_cta');
+
+        $home_formation_title = get_field('home_formation_title');
+        $home_formation_copy = get_field('home_formation_copy');
+
+        $home_formation_card1_date = get_field('home_formation_card1_date');
+        $home_formation_card1_title = get_field('home_formation_card1_title');
+        $home_formation_card1_copy = get_field('home_formation_card1_copy');
+
+        $home_formation_card2_date = get_field('home_formation_card2_date');
+        $home_formation_card2_title = get_field('home_formation_card2_title');
+        $home_formation_card2_copy = get_field('home_formation_card2_copy');
+
+        $home_formation_card3_date = get_field('home_formation_card3_date');
+        $home_formation_card3_title = get_field('home_formation_card3_title');
+        $home_formation_card3_copy = get_field('home_formation_card3_copy');
     }
 }
 ?>
@@ -36,9 +55,10 @@ if (function_exists('get_field')) {
         <div class="hero__copy"><?php echo esc_html($home_hero_copy); ?>
         </div>
     </section>
+
     <section class="services" id="services">
-        <h2 class="section__heading">Services</h2>
-        <p class="section__copy">Les choses que je peux faire pour vous !</p>
+        <h2 class="section__heading"><?= ($home_services_title); ?></h2>
+        <p class="section__copy"><?= ($home_services_copy); ?></p>
 
         <div class="services__wrapper">
             <div class="services__card">
@@ -50,9 +70,8 @@ if (function_exists('get_field')) {
                     </svg>
                 </div>
                 <div class="services__card__body">
-                    <div class="services__card__title">Dévelopement Web</div>
-                    <div class="services__card__copy">Je développe des sites web centrés sur l’accessibilité et les
-                        performances.
+                    <div class="services__card__title"><?= ($home_services_card1_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_services_card1_copy); ?>
                     </div>
                 </div>
             </div>
@@ -65,10 +84,8 @@ if (function_exists('get_field')) {
                     </svg>
                 </div>
                 <div class="services__card__body">
-                    <div class="services__card__title">UI / UX Design</div>
-                    <div class="services__card__copy">Je conçois des interfaces centrées sur l’utilisateur et qui
-                        valorisent
-                        votre marque.
+                    <div class="services__card__title"><?= ($home_services_card2_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_services_card2_copy); ?>
                     </div>
                 </div>
             </div>
@@ -81,108 +98,74 @@ if (function_exists('get_field')) {
                     </svg>
                 </div>
                 <div class="services__card__body">
-                    <div class="services__card__title">SEO</div>
-                    <div class="services__card__copy">En plus de créer une expérience memorable, j’optimise votre
-                        visibilité
-                        sur internet.
+                    <div class="services__card__title"><?= ($home_services_card3_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_services_card3_copy); ?>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="project" id="project">
-        <h2 class="section__heading">Projets récents</h2>
-        <p class="section__copy">Projets scolaires, personnels et professionnels</p>
+        <h2 class="section__heading"><?= ($home_projects_title); ?></h2>
+        <p class="section__copy"><?= ($home_projects_copy); ?></p>
 
         <div class="project__wrapper">
-            <div class="project__card">
+
+            <?php
+            $projects = new WP_Query([
+                'post_type' => 'project',
+                'posts_per_page' => 3,
+            ]);
+
+            if($projects->have_posts()): while($projects->have_posts()): $projects->the_post();
+            ?>
+
+            <a href="<?php the_permalink(); ?>" class="project__card">
                 <div class="project__card__figure">
                     <img class="project__card__image" src="" alt="">
                 </div>
                 <div class="project__card__body">
-                    <div class="project__card__title">Le Sef de Huy</div>
-                    <div class="project__card__copy">Création d’un site web pour une asbl dans le cadre du cours de
-                        Design
-                        Web.
-                    </div>
+                    <div class="project__card__title"><?= get_the_title(); ?></div>
+                    <div class="project__card__copy"><?= get_field('project_description_copy'); ?></div>
                 </div>
-            </div>
-            <div class="project__card project__card--reversed">
-                <div class="project__card__figure">
-                    <img class="project__card__image" src="" alt="">
-                </div>
-                <div class="project__card__body">
-                    <div class="project__card__title">Le CV</div>
-                    <div class="project__card__copy">Projet consistant à cloner la page d’accueil d’un site et la
-                        transformer en un CV dans le cadre du cours de Design Web.
-                    </div>
-                </div>
-            </div>
-            <div class="project__card">
-                <div class="project__card__figure">
-                    <img class="project__card__image" src="" alt="">
-                </div>
-                <div class="project__card__body">
-                    <div class="project__card__title">Le Portfolio</div>
-                    <div class="project__card__copy">Création d’un Portfolio utilisant Wordpress dans le cadre du cours
-                        de
-                        Design Web.
-                    </div>
-                </div>
-            </div>
+            </a>
+
+            <?php endwhile; endif; ?>
+
             <a class="button" type="submit" href="<?= esc_url(get_projects_page_url()); ?>">
-                Voir mes projets
+                <?= ($home_projects_cta); ?>
             </a>
         </div>
     </section>
+
     <section class="services training" id="training">
-        <h2 class="section__heading">Ma formation</h2>
-        <p class="section__copy">Découvrez où j'ai acquis mes compétences</p>
+        <h2 class="section__heading"><?= ($home_formation_title); ?></h2>
+        <p class="section__copy"><?= ($home_formation_copy); ?></p>
 
         <div class="services__wrapper">
             <div class="services__card">
-                <div class="services__card__date">
-                    2021-2024
-                </div>
+                <div class="services__card__date"><?= ($home_formation_card1_date); ?></div>
                 <div class="services__card__body">
-                    <div class="services__card__title">Bachelier en technique graphique</div>
-                    <div class="services__card__copy">Je suis actuellement étudiant à la Haute École de la Province de
-                        Liège, où je me spécialise dans le graphisme et le développement web. Mon parcours m'a permis de
-                        maîtriser les langages essentiels au développement front-end et back-end tels que HTML, CSS,
-                        TypeScript et PHP.
-                    </div>
+                    <div class="services__card__title"><?= ($home_formation_card1_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_formation_card1_copy); ?></div>
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__card__date">
-                    2016-2023
-                </div>
+                <div class="services__card__date"><?= ($home_formation_card2_date); ?></div>
                 <div class="services__card__body">
-                    <div class="services__card__title">Auto-perfectionnement</div>
-                    <div class="services__card__copy">Je suis passionné par le développement personnel dans les domaines
-                        du
-                        graphisme, du montage vidéo et du web. En autodidacte, j'explore diverses techniques et outils
-                        pour
-                        affiner mes compétences. Mon parcours m'a conduit à maîtriser les aspects créatifs et techniques
-                        essentiels de ces disciplines, utilisant tout les outils à ma portée.
-                    </div>
+                    <div class="services__card__title"><?= ($home_formation_card2_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_formation_card2_copy); ?></div>
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__card__date">
-                    2016-2020
-                </div>
+                <div class="services__card__date"><?= ($home_formation_card3_date); ?></div>
                 <div class="services__card__body">
-                    <div class="services__card__title">Collège Saint-Louis Waremme</div>
-                    <div class="services__card__copy">J'ai obtenu mon CESS en technique de transition informatique, où
-                        j'ai
-                        acquis les fondamentaux du web, du graphisme et de l'informatique. Je continue d'explorer et de
-                        perfectionner mes connaissances de manière
-                        autodidacte, en utilisant ces bases solides comme tremplin pour mes projets personnels et
-                        professionnels.
-                    </div>
+                    <div class="services__card__title"><?= ($home_formation_card3_title); ?></div>
+                    <div class="services__card__copy"><?= ($home_formation_card3_copy); ?></div>
                 </div>
             </div>
         </div>
     </section>
+
 <?php get_footer(); ?>
