@@ -4,7 +4,7 @@
         <p class="contact-info__details"><?= get_field('contact_aside_copy1'); ?></p>
     </div>
     <div class="social-media">
-        <h2 class="contact-info__title">Réseaux sociaux</h2>
+        <h2 class="contact-info__title"><?= get_field('contact_aside_title2'); ?></h2>
         <ul class="footer__social-list">
             <li><a class="footer__social-logo-link" href="<?= get_field('contact_social_url1'); ?>"><img
                         class="footer__social-logo-item" loading="lazy"

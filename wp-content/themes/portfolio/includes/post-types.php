@@ -1,4 +1,14 @@
 <?php
+register_post_type('message', [
+    'label' => 'Messages',
+    'description' => 'Messages envoyés via le formulaire de contact.',
+    'public' => true,
+    'menu_position' => 20,
+    'menu_icon' => 'dashicons-email', // https://developer.wordpress.org/resource/dashicons
+    'supports' => ['title', 'editor'],
+]);
+
+
 // Function to register the Custom Post Type 'Project'.
 function register_project_post_type(): void
 {
