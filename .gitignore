@@ -9,3 +9,4 @@ wp-content/themes/*
 !wp-content/themes/portfolio/
 !wp-content/themes/portfolio/*
 /wp-content/themes/portfolio/public/content/
+wp-content/themes/portfolio/.DS_Store
