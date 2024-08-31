@@ -1,1 +1,3 @@
-console.log('hello world')
+import {ScrollAnimator} from "./controllers/ScrollAnimator";
+
+ScrollAnimator.init();

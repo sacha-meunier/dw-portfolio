@@ -5,7 +5,7 @@
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.8574 0L0 4.06981L4.31441 5.91274L10.0291 4.33857L5.44978 12.5934L10.3319 22L17.3333 4.33857L13.2082 7.33333L10.0291 13.3229L9.23435 11.6719L15.8574 0Z"/>
             </svg>
-            <span class="header__logo-text">Zekiah</span>
+            <span class="header__logo-text">Sacha</span>
         </a>
 
         <nav class="header__nav" role="navigation" aria-label="Primary">

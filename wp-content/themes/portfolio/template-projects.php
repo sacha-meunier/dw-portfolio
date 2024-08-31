@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
     <section class="project main-content">
-        <h2 class="project__heading">Mes projets</h2>
+        <h2 class="project__heading" data-animate="slide-up-fade">Mes projets</h2>
 
         <div class="project__wrapper">
             <?php

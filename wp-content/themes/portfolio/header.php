@@ -25,7 +25,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="no-js">
 
 <noscript>
     <p class="no-js__message">

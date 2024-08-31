@@ -1,6 +1,6 @@
 <section class="project" id="project">
-    <h2 class="section__heading"><?= get_field('home_projects_title'); ?></h2>
-    <p class="section__copy"><?= get_field('home_projects_copy'); ?></p>
+    <h2 class="section__heading" data-animate="slide-up-fade"><?= get_field('home_projects_title'); ?></h2>
+    <p class="section__copy" data-animate="slide-up-fade"><?= get_field('home_projects_copy'); ?></p>
 
     <div class="project__wrapper">
         <?php
@@ -22,7 +22,7 @@
 
         <?php endif; ?>
 
-        <a class="button" href="<?= esc_url(get_projects_page_url()); ?>">
+        <a class="button" data-animate="slide-up-fade" href="<?= esc_url(get_projects_page_url()); ?>">
             <?= get_field('home_projects_cta'); ?>
         </a>
     </div>
