@@ -46,14 +46,14 @@ if (function_exists('get_field')) {
     <section class="project-item">
         <h2 class="project-item__heading" data-animate="slide-up-fade"><?= the_title(); ?></h2>
 
-        <div class="project-item__breadcrumb" data-animate="fade-in">
+        <a class="project-item__breadcrumb" data-animate="fade-in" href="<?= esc_url(home_url('/projects')); ?>">
             <svg class="project-item__breadcrumb-img" width="12" height="12" viewBox="0 0 12 12" fill="none"
                  stroke="#D4D4D8" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 11V1M1 1H11M1 1L11 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
-            <a class="project-item__breadcrumb-text" href="<?= esc_url(home_url('/projects')); ?>"><?= $project_ariane; ?></a>
-        </div>
+            <div class="project-item__breadcrumb-text"><?= $project_ariane; ?></div>
+        </a>
 
         <a class="project-item__live" href="<?= esc_url($project_url); ?>">
             <div class="project-item__live-subtitle">
