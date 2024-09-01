@@ -34,7 +34,7 @@
             pour activer JavaScript dans votre navigateur Web</a>.
     </p>
 </noscript>
-<input id="scheme-color" type="checkbox" aria-label="hidden">
+<input class="scheme-color-input" id="scheme-color" type="checkbox" aria-label="hidden">
 
 <?= get_template_part('components/navigation'); ?>
 

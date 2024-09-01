@@ -1,4 +1,4 @@
-#scheme-color {
+.scheme-color-input {
   display: none;
 }
 
@@ -48,6 +48,7 @@
     height: 28px;
 
   }
+
   &__icon {
     stroke: var(--clr-high);
     margin-left: -1px;
@@ -55,6 +56,6 @@
   }
 }
 
-#scheme-color:checked ~ .footer .scheme__mode:after {
+body:has(#scheme-color:checked) .scheme__mode:after {
   transform: translateX(42px);
 }
