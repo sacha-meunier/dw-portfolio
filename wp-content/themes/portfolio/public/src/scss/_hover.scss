@@ -1,0 +1,40 @@
+$transition: .2s linear;
+$transition-text: .3s ease;
+
+.button,
+.button--in-card,
+.project__card,
+.hover-text,
+{
+  transition: background $transition, color $transition, border $transition, stroke $transition;
+  will-change: background, color, stroke, border;
+}
+
+.button:hover,
+.button:focus,
+{
+  background: var(--clr-low);
+  color: var(--clr-higher);
+  border: 1px solid var(--clr-medium);
+}
+
+.button--in-card:hover,
+.button--in-card:focus,
+{
+  background: var(--clr-medium);
+  color: var(--clr-higher);
+  border: 1px solid var(--clr-high);
+}
+
+.project__card:hover,
+.project__card:focus,
+{
+  background: var(--clr-low);
+}
+
+.hover-text:hover,
+.hover-text:focus,
+{
+  color: var(--clr-medium);
+  stroke: var(--clr-medium);
+}

@@ -8,10 +8,6 @@
 @import "config/spacings";
 @import "config/breakpoints";
 
-// load mixins & vars
-@import "helpers";
-@import "scrollAnimator";
-
 // load pages
 @import "pages/project";
 @import "pages/project-item";
@@ -26,3 +22,8 @@
 @import "components/footer";
 @import "components/toggler";
 @import "components/accordion";
+
+// load mixins & vars
+@import "helpers";
+@import "scrollAnimator";
+@import "hover";
