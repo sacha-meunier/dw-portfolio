@@ -1,7 +1,7 @@
 @import "../helpers";
 
 .hero {
-  padding-top: var(--space-2xl);
+  padding-top: 10rem;
   padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,6 @@
   flex-direction: column;
 
   &__wrapper {
-    margin-bottom: clamp(1.5rem, 10vw, 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;

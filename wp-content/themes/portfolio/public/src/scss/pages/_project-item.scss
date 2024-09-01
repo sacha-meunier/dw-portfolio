@@ -24,6 +24,7 @@
     align-self: start;
     gap: 0.625rem;
     margin-bottom: 5.5rem;
+    text-decoration: none;
 
     &-img {
       stroke: var(--clr-higher);
@@ -80,12 +81,10 @@
     max-width: 50rem;
     min-height: 10rem;
     margin-bottom: clamp(1.5rem, 10vw, 5rem);
-    //background: var(--clr-low);
 
     &-img {
       margin: 0 auto;
-      width: auto;
-      max-height: 300px;
+      width: 100%;
     }
   }
 

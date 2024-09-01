@@ -6,6 +6,7 @@
 
   &__label {
     position: fixed;
+    padding: 0;
     z-index: 9999;
     top: var(--margin-sides-xs);
     right: var(--margin-sides-xs);
@@ -37,6 +38,7 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
+    z-index: 5000;
     top: 0;
     left: 0;
 
