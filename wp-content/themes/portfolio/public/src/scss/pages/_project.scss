@@ -2,7 +2,8 @@
 
 .project {
   @include margin-sides;
-  padding-bottom: 12rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 
   &__heading {
     margin-bottom: clamp(1.5rem, 10vw, 3rem);
