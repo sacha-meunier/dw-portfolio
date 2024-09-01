@@ -9,11 +9,12 @@
                     </svg>
                     <span class="footer__logo-text">Zekiah</span>
                 </a>
-                <a class="footer__contact" href="<?= esc_url(get_contact_page_url()); ?>" aria-label="Zekiah - contact">Contactez-moi</a>
+                <a class="button footer__contact" href="<?= esc_url(get_contact_page_url()); ?>"
+                   aria-label="Zekiah - contact">Contactez-moi</a>
             </div>
 
             <div class="footer__scheme scheme">
-                <div class="scheme__language">
+                <!--<div class="scheme__language">
                     <div class="scheme__item scheme__item--active">
                         <svg class="scheme__flag scheme__flag--active" width="16" height="16" viewBox="0 0 24 24"
                              fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +73,7 @@
                             </defs>
                         </svg>
                     </div>
-                </div>
+                </div>-->
 
                 <label for="scheme-color" class="scheme__mode">
                     <span class="scheme__item">
@@ -119,10 +120,15 @@
                      aria-label="Mobile navigation">
                     <h2 class="sro">Navigation</h2>
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>">Accueil</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>#services">Services</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(get_projects_page_url()); ?>">Projets</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="<?= esc_url(home_url('/')); ?>#training">Formations</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link hover-text"
+                                                        href="<?= esc_url(home_url('/')); ?>">Accueil</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link hover-text"
+                                                        href="<?= esc_url(home_url('/')); ?>#services">Services</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link hover-text"
+                                                        href="<?= esc_url(get_projects_page_url()); ?>">Projets</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link hover-text"
+                                                        href="<?= esc_url(home_url('/')); ?>#training">Formations</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -136,11 +142,11 @@
                     Coordonnées
                 </label>
 
-                <aside class="footer__nav accordion__content"  id="coordinates" role="complementary">
+                <aside class="footer__nav accordion__content" id="coordinates" role="complementary">
                     <h2 class="sro">Coordonnées</h2>
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">contact@zekiah.com</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Faimes, Belgique</a></li>
+                        <li class="footer__nav-item"><span class="footer__nav-link" href="#">contact@zekiah.com</span></li>
+                        <li class="footer__nav-item"><span class="footer__nav-link" href="#">Faimes, Belgique</span></li>
                     </ul>
                 </aside>
             </div>
@@ -159,7 +165,8 @@
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item"><a class="footer__nav-link" href="#">©2024 Zekiah. Tous droits
                                 réservés.</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Mentions légales</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link hover-text" href="#">Mentions
+                                légales</a></li>
                     </ul>
                 </aside>
             </div>
@@ -176,46 +183,64 @@
                 <section class="footer__social" id="socials" aria-labelledby="social-media-heading">
                     <h2 id="social-media-heading" class="sro">Mes réseaux sociaux</h2>
                     <ul class="footer__social-list">
-                        <li><a class="footer__social-logo-link" href="https://www.github.com/sacha-meunier"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                                 src="<?= dw_asset('content/images/icon-github.svg')?>"
-                                                                                                                 alt="Icône de Github" width="18" height="18"></a></li>
-                        <li><a class="footer__social-logo-link" href="https://codepen.io/sacha-meunier"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                             src="<?= dw_asset('content/images/icon-codepen.svg')?>"
-                                                                                                             alt="Icône de Codepen" width="18" height="18"></a></li>
-                        <li><a class="footer__social-logo-link" href="https://dribbble.com/Zekiahs"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                         src="<?= dw_asset('content/images/icon-dribble.svg')?>"
-                                                                                                         alt="Icône de Dribbble" width="18" height="18"></a></li>
-                        <li><a class="footer__social-logo-link" href="https://twitter.com/ZekiahVFX"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                          src="<?= dw_asset('content/images/icon-twitter.svg')?>"
-                                                                                                          alt="Icône de Twitter" width="18" height="18"></a></li>
+                        <li>
+                            <a class="footer__social-logo-link" href="https://www.github.com/sacha-meunier">
+                                <img class="footer__social-logo-item" loading="lazy"
+                                     src="<?= dw_asset('content/images/icon-github.svg'); ?>"
+                                     alt="Icône de Github" width="18" height="18"></a>
+                        </li>
+                        <li>
+                            <a class="footer__social-logo-link" href="https://codepen.io/sacha-meunier">
+                                <img class="footer__social-logo-item" loading="lazy"
+                                     src="<?= dw_asset('content/images/icon-codepen.svg'); ?>"
+                                     alt="Icône de Codepen" width="18" height="18"></a>
+                        </li>
+                        <li>
+                            <a class="footer__social-logo-link" href="https://dribbble.com/Zekiahs">
+                                <img class="footer__social-logo-item" loading="lazy"
+                                     src="<?= dw_asset('content/images/icon-dribble.svg'); ?>"
+                                     alt="Icône de Dribbble" width="18" height="18"></a>
+                        </li>
+                        <li>
+                            <a class="footer__social-logo-link" href="https://twitter.com/ZekiahVFX">
+                                <img class="footer__social-logo-item" loading="lazy"
+                                     src="<?= dw_asset('content/images/icon-twitter.svg'); ?>"
+                                     alt="Icône de Twitter" width="18" height="18"></a>
+                        </li>
                     </ul>
                 </section>
             </div>
         </div>
     </div>
+
     <section class="footer__social footer__social-mobile" aria-labelledby="social-media-heading">
         <h2 id="social-media-heading" class="sro">Mes réseaux sociaux</h2>
         <ul class="footer__social-list">
-            <li><a class="footer__social-logo-link" href="https://www.github.com/sacha-meunier"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                                         src="public/content/images/icon-github.svg"
-                                                                                                                         alt="Icône de Github" width="18" height="18"></a></li>
-            <li><a class="footer__social-logo-link" href="https://codepen.io/sacha-meunier"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                                      src="public/content/images/icon-codepen.svg"
-                                                                                                                      alt="Icône de Codepen" width="18" height="18"></a></li>
-            <li><a class="footer__social-logo-link" href="https://dribbble.com/Zekiahs"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                                   src="public/content/images/icon-dribble.svg"
-                                                                                                                   alt="Icône de Dribbble" width="18" height="18"></a></li>
-            <li><a class="footer__social-logo-link" href="https://twitter.com/ZekiahVFX"><img class="footer__social-logo-item" loading="lazy"
-                                                                                                                    src="public/content/images/icon-twitter.svg"
-                                                                                                                    alt="Icône de Twitter" width="18" height="18"></a></li>
+            <li><a class="footer__social-logo-link" href="https://www.github.com/sacha-meunier"><img
+                            class="footer__social-logo-item" loading="lazy"
+                            src="<?= dw_asset('content/images/icon-github.svg'); ?>"
+                            alt="Icône de Github" width="18" height="18"></a></li>
+            <li><a class="footer__social-logo-link" href="https://codepen.io/sacha-meunier"><img
+                            class="footer__social-logo-item" loading="lazy"
+                            src="<?= dw_asset('content/images/icon-codepen.svg'); ?>"
+                            alt="Icône de Codepen" width="18" height="18"></a></li>
+            <li><a class="footer__social-logo-link" href="https://dribbble.com/Zekiahs"><img
+                            class="footer__social-logo-item" loading="lazy"
+                            src="<?= dw_asset('content/images/icon-dribble.svg'); ?>"
+                            alt="Icône de Dribbble" width="18" height="18"></a></li>
+            <li><a class="footer__social-logo-link" href="https://twitter.com/ZekiahVFX"><img
+                            class="footer__social-logo-item" loading="lazy"
+                            src="<?= dw_asset('content/images/icon-twitter.svg'); ?>"
+                            alt="Icône de Twitter" width="18" height="18"></a></li>
         </ul>
     </section>
+
     <section class="footer__legal footer__legal-desktop" aria-labelledby="social-media-heading">
         <h2 id="social-media-heading" class="sro">Informations légales</h2>
         <ul class="footer__nav-list">
             <li class="footer__nav-item"><span class="footer__nav-link">&copy; <?= date('Y'); ?> Zekiah. Tous droits
                     réservés.</span></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Mentions légales</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link hover-text" href="#">Mentions légales</a></li>
         </ul>
     </section>
 </footer>
